@@ -34,13 +34,21 @@ header{
     box-shadow:0 4px 25px -20px black;   
     z-index: 2;
 }
+
 .todo_header{
     height: 100%;
-    display: flex;
-    justify-content: space-between;
     padding:10px;
     align-items: center;    
-    
+    display:flex;
+}
+.header_visible{
+    width:2900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.menu_desplegable{
+    visibility: hidden;
 }
 
 .logo {
@@ -57,10 +65,11 @@ header{
     text-decoration:none;
 
 }
-
-#menu{
-    
+.navbar{
+    width:600px;
 }
+
+
 #menu li{
     
     display:inline;
@@ -354,8 +363,9 @@ footer a{
     color:rgb(255, 255, 255);
 }
 
-footer .facebook, .twitter, .instagram{
-    margin: 0 20px;
+.redes_icono{
+    margin-right:30px;
+    margin-left: 30px;
 }
 
 .redes{
@@ -367,6 +377,7 @@ footer .facebook, .twitter, .instagram{
     text-align: center;
     justify-content: center;
     margin: 20px;
+    padding: ;
 }
 
 footer img{
@@ -375,14 +386,11 @@ footer img{
     margin: 10px 0;
 }
 
-footer p{
-    font-size: 25px;
-}
 footer h2{
     text-align: center;
     font-size: 30px;
     font-weight: 500;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 
@@ -504,17 +512,17 @@ footer h2{
 
 }
 .cont_articulocategorias{
-    display:flex;
-    flex-wrap:wrap;
-    padding:30px;
-    margin-bottom: 50px;;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 40px;
+    padding: 20px;
+    margin-bottom: 30px;
     
     
 }
 .articulo_categoria{
     width:200px;
-    margin:30px;
-    margin-right: 40px;
+    margin-top:30px;
     width: 250px;
     background-color: white;
 }
@@ -559,6 +567,143 @@ footer h2{
     text-decoration: none;
 }
 
+/* animacion footer */
+.redes_icono:hover{
+    animation:saltar 1s ease-out 1 normal both;
+}
+@keyframes saltar{
+    0%{
+        transform:translateY(0) scale(1,1);
+    }
+    15%{
+        transform: translateY(-1rem) scale(1,1.2);
+    }
+    35%{
+        transform:translateY(-2.8rem) scale(1,1.08);
+    }
+    45%{
+        transform:translateY(-2.8rem) scale(1,1.08);
+    }
+    65%{
+        transform:translateY(0) scale(1,1.08);
+    }
+    75%{
+        transform:translateY(.5rem) scale(1.2,.8);
+    }
+    85%{
+        transform:translateY(0) scale(1,1);
+    }
+    95%{
+        transform:translateY(0) scale(1.05,1.05);
+    }
+    100%{
+        transform:translateY(0) scale(1,1);
+    }
+}
 
+/* responsive index */
+@media screen and (max-width: 1500px){
+    .cont_todoindex{display:flex;
+        flex-direction: column;
+        
+    }
+}
+@media screen and (max-width: 900px){
+    .cont_ultimosarticulos{
+        width: 850px;
+    }
+}
+@media screen and (max-width: 750px){
+    .cont_ultimosarticulos{
+        width:700px;
+    }
+}
+@media screen and (max-width: 650px){
+    .cont_ultimosarticulos{
+        width:600px;
+    }
+}
+/* responsive categorias */
+@media screen and (max-width: 1200px){
+    .cont_articulocategorias{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
 
+@media screen and (max-width: 800px){
+    .cont_articulocategorias{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 
+@media screen and (max-width: 600px){
+    .cont_articulocategorias{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* menu desplegable y responsive */
+@media screen and (max-width: 1500px){
+    
+    #menu{
+        display:none;
+    }
+    .menu_desplegable{
+        visibility: visible;
+        margin-right:150px;
+        
+    }
+    .header_visible{
+        justify-content:initial;    
+    }
+    .logo{
+        margin-right: 100px;;
+    }
+    .todo_header{
+        
+    }
+        
+ }
+
+ @media screen and (max-width: 1200px){
+    .navbar{
+        width:400px;
+    }
+}
+@media screen and (max-width: 950px){
+    .navbar{
+        width:300px;
+    }
+    .logo{
+        margin-right: 50px;;
+    }
+    .menu_desplegable{
+        margin-right: 100px;;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .logo{
+        margin-right: 50px;
+    }
+    .menu_desplegable{
+        margin-right: 50px;
+    }
+}
+
+/* sobre nosotros responsive */
+@media screen and (max-width: 900px){
+    .cont_about{
+        width:900px;
+    }
+}
+@media screen and (max-width: 850px){
+    .cont_about{
+        width:800px;
+    }
+}
+@media screen and (max-width: 750px){
+    .cont_about{
+        width:700px;
+    }
+}

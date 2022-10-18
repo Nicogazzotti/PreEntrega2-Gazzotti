@@ -6,22 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
 </head>
 <body class="body_index">
     <header>
         <div class="todo_header">
+            <div class="header_visible">
 
-            <div class="logo">
-                <a href="index.html"> <h1>InstaPost</h1>  </a>
+                <div class="logo">
+                    <a href="index.html"> <h1>InstaPost</h1>  </a>
+                </div>
+                <nav class="navbar bg-light"> 
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </nav>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>            
+                        <li><a href="paginas/categorias.html">Categorias</a></li>
+                        <li><a href="paginas/contacto.html">Contacto</a></li>
+                        <li><a href="paginas/sobre_nos.html">Sobre nosotros</a></li>  
+                    </ul>
+                </nav>
             </div>
-            <nav id="menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>            
-                    <li><a href="paginas/categorias.html">Categorias</a></li>
-                    <li><a href="paginas/contacto.html">Contacto</a></li>
-                    <li><a href="paginas/sobre_nos.html">Sobre nosotros</a></li>  
+           
+            <nav class="menu_desplegable btn-group" role="group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Menu</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html">Inicio</a></li>            
+                    <li><a class="dropdown-item" href="paginas/categorias.html">Categorias</a></li>
+                    <li><a class="dropdown-item" href="paginas/contacto.html">Contacto</a></li>
+                    <li><a class="dropdown-item" href="paginas/sobre_nos.html">Sobre nosotros</a></li>  
                 </ul>
             </nav>
+            
         </div>
 
     </header>
@@ -134,27 +152,28 @@
         <div class="redes">
 
             <a href="https://facebook.com/" target="_BLANK" class="facebook">
-                <div class="facebook">
+                <div class="redes_icono">
                     <img src="img/facebook.png">
-                    <p>Facebook</p>
+                    
                 </div>
             </a>
 
             <a href="https://instagram.com/" target="_BLANK" class="instagram">
-                <div class="instagram">
+                <div class="redes_icono">
                     <img src="img/instagram.png">
-                    <p>Instagram</p>
+                    
                 </div>
             </a>
 
             <a href="https://twitter.com/" target="_BLANK" class="twitter">
-                <div class="twitter">
-                    <img src="img/twitter.png">
-                    <p>Twitter</p>
+                <div class="redes_icono">
+                    <img src="img/twitter.png"> 
                 </div>
             </a>
             
         </div>
+
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
