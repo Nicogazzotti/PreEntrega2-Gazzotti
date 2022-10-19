@@ -68,6 +68,9 @@ header{
 .navbar{
     width:600px;
 }
+.navbar:focus{
+    outline:none
+}
 
 
 #menu li{
@@ -290,7 +293,7 @@ header{
     width: 1300px;
     margin: auto;
     margin-top:80px;
-    display:flex;
+    /* display:flex; */
     
 }
 article{
@@ -328,7 +331,9 @@ article h3{
     margin-top:20px;
     margin-bottom: 20px;
 }
-
+iframe{
+    width:100%;
+}
 
 
 /* /Footer/ */
@@ -602,8 +607,8 @@ footer h2{
 }
 
 /* responsive index */
-@media screen and (max-width: 1500px){
-    .cont_todoindex{display:flex;
+/* @media screen and (max-width: 1500px){
+    .cont_todoindex{
         flex-direction: column;
         
     }
@@ -623,6 +628,22 @@ footer h2{
         width:600px;
     }
 }
+@media screen and (max-width: 600px){
+    .cont_ultimosarticulos{
+        width:550px;
+    }
+}
+@media screen and (max-width: 550px){
+    .cont_ultimosarticulos{
+        width:500px;
+    }
+}
+@media screen and (max-width: 490px){
+    .cont_ultimosarticulos{
+        width:400px;
+    }
+} */
+
 /* responsive categorias */
 @media screen and (max-width: 1200px){
     .cont_articulocategorias{
@@ -641,6 +662,7 @@ footer h2{
         grid-template-columns: repeat(1,1fr);
     }
 }
+
 
 /* menu desplegable y responsive */
 @media screen and (max-width: 1500px){
@@ -681,18 +703,62 @@ footer h2{
         margin-right: 100px;;
     }
 }
-
-@media screen and (max-width: 670px){
+@media screen and (max-width: 600px){
+    .navbar{
+        width:250px;
+    }
     .logo{
         margin-right: 50px;
+    }
+    .menu_desplegable{
+        margin-right: 100px;
+    }
+}
+
+
+@media screen and (max-width: 540px){
+    .navbar{
+        width:200px;
+    }
+    .logo{
+        margin-right: 30px;
     }
     .menu_desplegable{
         margin-right: 50px;
     }
 }
+@media screen and (max-width: 470px){
+    .navbar{
+        width:150px;
+    }
+    .logo{
+        margin-right: 30px;
+    }
+    .menu_desplegable{
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 415px){
+    .navbar{
+        width:150px;
+    }
+    .logo{
+        margin-right: 15px;
+    }
+    .menu_desplegable{
+        margin-right: 0px;
+    }
+}
+
+/* @media screen and (max-width: 908px){
+    .cont_todo{
+        display:flex;
+        flex-direction: column;
+    }
+} */
 
 /* sobre nosotros responsive */
-@media screen and (max-width: 900px){
+/* @media screen and (max-width: 900px){
     .cont_about{
         width:900px;
     }
@@ -707,3 +773,22 @@ footer h2{
         width:700px;
     }
 }
+@media screen and (max-width: 670px){
+    .cont_about{
+        width:600px;
+    }
+}
+@media screen and (max-width: 570px){
+    .cont_about{
+        width:450px;
+    }
+}
+@media screen and (max-width: 420px){
+    .cont_about{
+        width:350px;
+    }
+} */
+
+/* articulo ejemplo responsive */
+
+/* HACER DISPLAY GRID CON BOOTSTRAP EN ARTICULO EJEMPLO QUE SE VAYA ADAPTANDO Y EN SOBRE NOSOTROSSSSSSSSSSSS */
