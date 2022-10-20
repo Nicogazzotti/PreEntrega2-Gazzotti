@@ -130,6 +130,9 @@ header{
     color:white;
     font-weight:100;
 }
+.cont-dentro_portada a:hover{
+    color:black;
+}
 .cont-dentro_portada a{
     color:skyblue;
 }
@@ -546,10 +549,10 @@ footer h2{
     width:80px;
     display:flex;
     justify-content: center;
+    
 }
 .articulo_categoria button{
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 5px;
     padding: 8px 40px;
     font-size: 15px;
     font-weight:600;
@@ -558,6 +561,10 @@ footer h2{
     border:none;
     cursor:pointer;
     border-radius:5px;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
     
 
@@ -605,7 +612,24 @@ footer h2{
         transform:translateY(0) scale(1,1);
     }
 }
-
+/* animacion button */
+.cont_aside button:hover , .cont_articulocategorias button:hover{
+    animation: boton 2s infinite;
+}
+@keyframes boton{
+    0%{
+        tranform: scale(0.9)
+        box-shadow:0 0 0 0  rgba(255,255,255,0.4)
+    }
+    70%{
+        transform:scale(0.8);
+        box-shadow:0 0 0 10px rgba(255,255,255,0);
+    }
+    100%{
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255,255,255,0);
+    }
+}
 /* responsive index */
 /* @media screen and (max-width: 1500px){
     .cont_todoindex{
