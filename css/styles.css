@@ -17,7 +17,6 @@ a:visited{
     text-decoration: none;
 }
 a:hover{
-    color:black;
     text-decoration: underline;
 }
 .body_index{
@@ -69,7 +68,7 @@ header{
     width:600px;
 }
 .navbar:focus{
-    outline:none
+    outline:none;
 }
 
 
@@ -94,7 +93,7 @@ header{
     height:500px;
     position:relative;
     margin-top:80px;
-    background-image: url(../img/Imagen\ de\ portada.jpg);
+    background-image: url(../img/imagendeportada.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -118,7 +117,7 @@ header{
     
     
 }
-.cont-dentro_portada h1{
+.cont-dentro_portada h2{
     font-size: 66px;
     font-weight: 400;
     margin-bottom: 20px;
@@ -151,7 +150,6 @@ header{
 
 .cont_ultimosarticulos{
     max-width: 1200px;
-    text-decoration: none;
     display: flex;
     flex-direction: column;
     border-radius: 6px;
@@ -163,7 +161,6 @@ header{
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 28px;
-    text-decoration: none;
 }
 
 .cont_articulo{
@@ -172,7 +169,7 @@ header{
     padding-bottom: 20px;
     background: white;
     display: flex;
-    text-decoration: none;
+    
 }
 
 .cont_img{
@@ -258,7 +255,7 @@ header{
     height:100%;
     height:150px;
 }
-.cont_aside h2{
+.cont_aside h4{
     margin-top:5px;
     font-size: 20px;;
     padding:0 20px;
@@ -280,7 +277,7 @@ header{
 .cont_aside button:hover{
     opacity:0.9;
 }
-.cont_aside h1{
+.cont_aside h2{
     
     margin-bottom: 10px;
     font-weight: 500;
@@ -306,7 +303,7 @@ article{
     background-color: white;
     
 }
-article h1{
+article h2{
     margin-top:10px;
     padding-bottom:10px;
     font-weight: 700;
@@ -317,7 +314,7 @@ article p{
     margin-top:25px;
     font-size:16px;
 }
-article h2{
+article h3{
     margin-top:20px;
     margin-bottom: 20px;
     font-weight: 700;
@@ -328,7 +325,7 @@ article img{
     width:100%;
     padding:0px;
 }
-article h3{
+article h4{
     font-size: 20px;
     font-weight: 600;
     margin-top:20px;
@@ -367,7 +364,6 @@ iframe{
 }
 
 footer a{
-    text-decoration: none;
     color:rgb(255, 255, 255);
 }
 
@@ -418,7 +414,7 @@ footer h2{
     background-color:#D0F1FF;  
     margin-top:150px;
 }
-.form_contacto h2{
+.form_contacto h1{
     text-align:center;
     margin:0;
     font-size:30px;
@@ -435,7 +431,7 @@ footer h2{
 }
 .form_contacto label{
     font-size:20px;
-    margin-bottom:40px;
+    margin-bottom:15px;
 }
 .form_contacto textarea{
     min-height: 100px;
@@ -474,10 +470,12 @@ footer h2{
 .cont_about img{
     width:100%;
 }
-.cont_about h1{
+
+.cont_about h2{
     font-size:35px;
     padding-bottom:px;
 }
+
 .cont_about p{
     padding-bottom: 20px;
     font-size:16px;
@@ -529,17 +527,19 @@ footer h2{
     
 }
 .articulo_categoria{
-    width:200px;
     margin-top:30px;
     width: 250px;
     background-color: white;
 }
 .articulo_categoria img{
-    width:100%;
     width:250px;
     height:150px;
     
 }
+.articulo_categoria:hover{
+    transform: scale(1.03);
+}
+
 .articulo_categoria li{
     list-style: none;
     border-radius: 5px;
@@ -576,7 +576,6 @@ footer h2{
     margin-bottom:6px;
     font-weight: 500;
     font-size:22px;
-    text-decoration: none;
 }
 
 /* animacion footer */
