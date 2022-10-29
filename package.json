@@ -1,0 +1,22 @@
+{
+  "name": "proyecto-coder",
+  "version": "1.0.0",
+  "description": "sass para proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicogazzotti/PreEntrega2-Gazzotti.git"
+  },
+  "author": "nicogazzotti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nicogazzotti/PreEntrega2-Gazzotti/issues"
+  },
+  "homepage": "https://github.com/Nicogazzotti/PreEntrega2-Gazzotti#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
