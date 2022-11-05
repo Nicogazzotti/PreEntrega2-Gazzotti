@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lato:ital,wght@0,100;1,100&family=Rubik+Dirt&display=swap');
+@import "_header.scss";
 $cg:#eeeeee ;
 $cb:white;
 $lg:lightgrey;
@@ -34,67 +35,9 @@ a{
 .body_index{
     background-color:$cg;
 }
-/* menu header */
-header{
-    position: fixed;
-    top: 0;
-    left:0;
-    width:$w100;
-    height:80px;
-    background:$cb;  
-    box-shadow:0 4px 25px -20px black;   
-    z-index: 2;
+.logo a{
+    color:deepskyblue;
 }
-
-.todo_header{
-    height: $w100;
-    padding:10px;
-    align-items: center;    
-    display:flex;
-}
-.header_visible{
-    width:2900px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-}
-.menu_desplegable{
-    visibility: hidden;
-}
-
-.logo{
-    padding-left: 20px;
-    a{
-        color:deepskyblue;
-    }
-    a:hover{
-        text-decoration:none;
-    
-    }
-}
-
-
-.navbar{
-    width:600px;
-    &:focus{
-        outline:none;
-    }
-}
-
-
-#menu ul{
-    padding-right: 20px;
-    li{
-        display:inline;
-        margin:0 20px;  
-        a{
-            font-family: 'Rubik Dirt', cursive;
-        } 
-    }
-}
-
-
-
 /* portada */
 .cont_portada{
     width: $w100;
@@ -223,7 +166,7 @@ header{
 .texto_index{
     margin-top:40px;
     p{
-        font-size: 20px;
+        font-size: 18px;
     }
     a{
     color:dodgerblue;
@@ -240,8 +183,7 @@ header{
         border-radius: 6px;
         overflow:hidden;
         background-color: white; 
-        margin-top:20px;
-        padding-bottom:10px;
+        padding-bottom:15px;
         border-radius:6px;
         button{
             margin-top: 10px;
@@ -250,7 +192,7 @@ header{
             font-size: 15px;
             font-weight:600;
             color:white;
-            background: rgb(0, 132, 255);
+            background-color: deepskyblue;
             border:none;
             cursor:pointer;
             border-radius:5px;
@@ -267,6 +209,7 @@ header{
         font-weight: 500;
         font-size: 28px;
         text-decoration: none;
+        margin-top: 10px;
         
     }     
     h3{
@@ -432,9 +375,14 @@ footer{
     font-size:20px;
     font-weight: 500;
     padding:20px;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
     &:hover{
-        cursor:pointer;
+        opacity:0.9;
     }
+    
 }
 
 /* ABOUT PAGINA */
@@ -534,7 +482,7 @@ footer{
         font-size: 15px;
         font-weight:600;
         color:white;
-        background: rgb(0, 132, 255);
+        background-color:deepskyblue;
         border:none;
         cursor:pointer;
         border-radius:5px;
@@ -586,7 +534,7 @@ footer{
     }
 }
 /* animacion button */
-.cont_aside button:hover , .cont_articulocategorias button:hover{
+.cont_aside button:hover , .cont_articulocategorias button:hover, #reset:hover,#submit:hover{
     animation: boton 2s infinite;
 }
 @keyframes boton{
@@ -635,12 +583,14 @@ footer{
         font-size: 22px;
     }
     .cont_aside{
+        
         aside button{
         padding: 5px 22px;
         }
         h2{
             font-size: 22px;
         }
+        
     }
 }
 @media screen and (max-width: 950px) {
@@ -673,11 +623,13 @@ footer{
     .menu_desplegable {
         margin-right: 100px;
     }
+    
+}
+@media screen and (max-width:767px) {
     .cont_aside aside{
         width:300px;
     }
 }
-
 @media screen and (max-width: 540px) {
     .navbar {
         width: 200px;
@@ -693,22 +645,27 @@ footer{
     .navbar {
         width: 150px;
     }
-    .logo {
-        margin-right: 30px;
+    .logo a {
+        font-size: 28px;
     }
     .menu_desplegable {
         margin-right: 50px;
     }
 }
 
-@media screen and (max-width: 415px) {
-    .navbar {
-        width: 150px;
+@media screen and (max-width: 400px) {
+    .logo{
+        padding-left: 0;
+        
     }
-    .logo {
-        margin-right: 15px;
+    .navbar{
+        width:100px;
     }
     .menu_desplegable {
         margin-right: 0px;
     }
+}
+
+@media screen and (max-width: 350px) {
+    
 }

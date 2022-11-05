@@ -1,0 +1,62 @@
+/* menu header */
+$w100: 100%;
+$cg:#eeeeee ;
+$cb:white;
+header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width:$w100;
+    height:80px;
+    background:$cb;  
+    box-shadow:0 4px 25px -20px black;   
+    z-index: 2;
+}
+
+.todo_header{
+    height: $w100;
+    padding:10px;
+    align-items: center;    
+    display:flex;
+}
+.header_visible{
+    width:2900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.menu_desplegable{
+    visibility: hidden;
+}
+
+.logo{
+    padding-left: 20px;
+    a{
+        color:deepskyblue;
+        font-size: 38px;
+    }
+    a:hover{
+        text-decoration:none;
+    }
+}
+
+
+.navbar{
+    width:600px;
+    &:focus{
+        outline:none;
+    }
+}
+
+
+#menu ul{
+    padding-right: 20px;
+    li{
+        display:inline;
+        margin:0 20px;  
+        a{
+            font-family: 'Rubik Dirt', cursive;
+        } 
+    }
+}
+

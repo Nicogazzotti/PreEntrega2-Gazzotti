@@ -1,29 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lato:ital,wght@0,100;1,100&family=Rubik+Dirt&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: sans-serif;
-}
-
-a:link {
-  color: black;
-  text-decoration: none;
-}
-a:visited {
-  color: black;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-.body_index {
-  background-color: #eeeeee;
-}
-
 /* menu header */
 header {
   position: fixed;
@@ -59,6 +35,7 @@ header {
 }
 .logo a {
   color: deepskyblue;
+  font-size: 38px;
 }
 .logo a:hover {
   text-decoration: none;
@@ -80,6 +57,34 @@ header {
 }
 #menu ul li a {
   font-family: "Rubik Dirt", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.body_index {
+  background-color: #eeeeee;
+}
+
+.logo a {
+  color: deepskyblue;
 }
 
 /* portada */
@@ -211,7 +216,7 @@ header {
   margin-top: 40px;
 }
 .texto_index p {
-  font-size: 20px;
+  font-size: 18px;
 }
 .texto_index a {
   color: dodgerblue;
@@ -224,8 +229,7 @@ header {
   border-radius: 6px;
   overflow: hidden;
   background-color: white;
-  margin-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   border-radius: 6px;
 }
 .cont_aside aside button {
@@ -235,7 +239,7 @@ header {
   font-size: 15px;
   font-weight: 600;
   color: white;
-  background: rgb(0, 132, 255);
+  background-color: deepskyblue;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -251,6 +255,7 @@ header {
   font-weight: 500;
   font-size: 28px;
   text-decoration: none;
+  margin-top: 10px;
 }
 .cont_aside h3 {
   margin-top: 5px;
@@ -413,9 +418,13 @@ footer h2 {
   font-size: 20px;
   font-weight: 500;
   padding: 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 #reset:hover, #submit:hover {
-  cursor: pointer;
+  opacity: 0.9;
 }
 
 /* ABOUT PAGINA */
@@ -515,7 +524,7 @@ footer h2 {
   font-size: 15px;
   font-weight: 600;
   color: white;
-  background: rgb(0, 132, 255);
+  background-color: deepskyblue;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -566,7 +575,7 @@ footer h2 {
   }
 }
 /* animacion button */
-.cont_aside button:hover, .cont_articulocategorias button:hover {
+.cont_aside button:hover, .cont_articulocategorias button:hover, #reset:hover, #submit:hover {
   animation: boton 2s infinite;
 }
 
@@ -648,6 +657,8 @@ footer h2 {
   .menu_desplegable {
     margin-right: 100px;
   }
+}
+@media screen and (max-width: 767px) {
   .cont_aside aside {
     width: 300px;
   }
@@ -667,19 +678,19 @@ footer h2 {
   .navbar {
     width: 150px;
   }
-  .logo {
-    margin-right: 30px;
+  .logo a {
+    font-size: 28px;
   }
   .menu_desplegable {
     margin-right: 50px;
   }
 }
-@media screen and (max-width: 415px) {
-  .navbar {
-    width: 150px;
-  }
+@media screen and (max-width: 400px) {
   .logo {
-    margin-right: 15px;
+    padding-left: 0;
+  }
+  .navbar {
+    width: 100px;
   }
   .menu_desplegable {
     margin-right: 0px;
