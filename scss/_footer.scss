@@ -1,0 +1,65 @@
+$cb:white;
+$lg:lightgrey;
+$cdsb:deepskyblue;
+$w100: 100%;
+
+@mixin flex($disp , $just , $align){
+    display         : $disp;
+    justify-content : $just;
+    align-items     : $align;       
+
+}
+
+/* /Footer/ */
+.footer_fijo{
+    margin-top:30px;
+    width: $w100;
+    position:fixed;
+    height:180px;
+    bottom:0px;
+    @include flex(flex , center , center);
+    flex-direction: column;
+    background-color: $cb;
+}
+.footer_relativo{
+    margin-top:30px;
+    width: $w100;
+    position:relative;
+    height:180px;
+    bottom:0px;
+    @include flex(flex , center , center);
+    flex-direction: column;
+    background-color: $cb;
+    
+}
+footer{
+    a{
+        color:rgb(255, 255, 255);
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        margin: 10px 0;
+    }
+    h2{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+}
+
+.redes_icono{
+    margin-right:30px;
+    margin-left: 30px;
+}
+
+.redes{
+    max-width: 900px;
+    width: $w100;
+    height: 100px;
+    @include flex(flex , center , center);
+    text-align: center;
+    margin: 20px;
+    
+}

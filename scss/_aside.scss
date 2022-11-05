@@ -1,0 +1,50 @@
+$cb:white;
+$cdsb:deepskyblue;
+$w100: 100%;
+@mixin font($fs, $fw){
+    font-size  : $fs;
+    font-weight: $fw;
+}
+/* aside */
+.cont_aside{
+    aside{
+    
+        width:$w100;
+        box-shadow:0 0 20 -20px black;
+        border-radius: 6px;
+        overflow:hidden;
+        background-color: $cb; 
+        padding-bottom:15px;
+        border-radius:6px;
+        button{
+            margin-top: 10px;
+            margin-left: 20px;
+            padding: 8px 40px;
+            @include font(15px,600);
+            color:$cb;
+            background-color: $cdsb;
+            border:none;
+            cursor:pointer;
+            border-radius:5px;
+            &:hover{
+                opacity:0.9;
+            }
+        }
+    }
+    img{
+        width:$w100;
+        height:150px;
+    }
+    h2{
+        @include font(28px,500);
+        text-decoration: none;
+        margin-top: 10px;
+        
+    }     
+    h3{
+        margin-top:5px;
+        @include font(20px,500);
+        padding:0 20px;
+        padding:0px; 
+    }
+}

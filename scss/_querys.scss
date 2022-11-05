@@ -1,0 +1,116 @@
+/* menu desplegable y responsive */
+@media screen and (max-width: 1500px) {
+    #menu {
+        display: none;
+    }
+    .menu_desplegable {
+        visibility: visible;
+        margin-right: 150px;
+    }
+    .header_visible {
+        justify-content: initial;
+    }
+    .logo {
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cont_articulocategorias {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .navbar {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 991px){
+    .cont_ultimosarticulos h2{
+        font-size: 22px;
+    }
+    .cont_aside{
+        
+        aside button{
+        padding: 5px 22px;
+        }
+        h2{
+            font-size: 22px;
+        }
+        
+    }
+}
+@media screen and (max-width: 950px) {
+    .navbar {
+        width: 300px;
+    }
+    .logo {
+        margin-right: 50px;
+    }
+    .menu_desplegable {
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .cont_articulocategorias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 600px) {
+    .cont_articulocategorias {
+        grid-template-columns: 1fr;
+    }
+    .navbar {
+        width: 250px;
+    }
+    .logo {
+        margin-right: 50px;
+    }
+    .menu_desplegable {
+        margin-right: 100px;
+    }
+    
+}
+@media screen and (max-width:767px) {
+    .cont_aside aside{
+        width:300px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .navbar {
+        width: 200px;
+    }
+    .logo {
+        margin-right: 30px;
+    }
+    .menu_desplegable {
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .navbar {
+        width: 150px;
+    }
+    .logo a {
+        font-size: 28px;
+    }
+    .menu_desplegable {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .logo{
+        padding-left: 0;
+        
+    }
+    .navbar{
+        width:100px;
+    }
+    .menu_desplegable {
+        margin-right: 0px;
+    }
+}
+
+// @media screen and (max-width: 350px) {
+    
+// }

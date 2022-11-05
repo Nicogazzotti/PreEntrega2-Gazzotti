@@ -1,0 +1,52 @@
+
+/* animacion footer */
+.redes_icono:hover{
+    animation:saltar 1s ease-out 1 normal both;
+}
+@keyframes saltar{
+    0%{
+        transform:translateY(0) scale(1,1);
+    }
+    15%{
+        transform: translateY(-1rem) scale(1,1.2);
+    }
+    35%{
+        transform:translateY(-2.8rem) scale(1,1.08);
+    }
+    45%{
+        transform:translateY(-2.8rem) scale(1,1.08);
+    }
+    65%{
+        transform:translateY(0) scale(1,1.08);
+    }
+    75%{
+        transform:translateY(.5rem) scale(1.2,.8);
+    }
+    85%{
+        transform:translateY(0) scale(1,1);
+    }
+    95%{
+        transform:translateY(0) scale(1.05,1.05);
+    }
+    100%{
+        transform:translateY(0) scale(1,1);
+    }
+}
+/* animacion button */
+.cont_aside button:hover , .cont_articulocategorias button:hover, #reset:hover,#submit:hover{
+    animation: boton 2s infinite;
+}
+@keyframes boton{
+    0%{
+        tranform: scale(0.9);
+        box-shadow: 0 0 0 0  rgba(255,255,255,0.4);
+    }
+    70%{
+        transform:scale(0.8);
+        box-shadow:0 0 0 10px rgba(255,255,255,0);
+    }
+    100%{
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255,255,255,0);
+    }
+}
