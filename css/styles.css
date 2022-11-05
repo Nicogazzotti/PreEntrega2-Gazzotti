@@ -67,7 +67,6 @@ header {
 .navbar {
   width: 600px;
 }
-
 .navbar:focus {
   outline: none;
 }
@@ -435,7 +434,7 @@ footer h2 {
 .cont_about img {
   width: 100%;
 }
-.cont_about h2 {
+.cont_about h1 {
   font-size: 35px;
   padding-bottom: px;
 }
@@ -585,43 +584,6 @@ footer h2 {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
-/* responsive index */
-/* @media screen and (max-width: 1500px){
-    .cont_todoindex{
-        flex-direction: column;
-
-    }
-}
-@media screen and (max-width: 900px){
-    .cont_ultimosarticulos{
-        width: 850px;
-    }
-}
-@media screen and (max-width: 750px){
-    .cont_ultimosarticulos{
-        width:700px;
-    }
-}
-@media screen and (max-width: 650px){
-    .cont_ultimosarticulos{
-        width:600px;
-    }
-}
-@media screen and (max-width: 600px){
-    .cont_ultimosarticulos{
-        width:550px;
-    }
-}
-@media screen and (max-width: 550px){
-    .cont_ultimosarticulos{
-        width:500px;
-    }
-}
-@media screen and (max-width: 490px){
-    .cont_ultimosarticulos{
-        width:400px;
-    }
-} */
 /* menu desplegable y responsive */
 @media screen and (max-width: 1500px) {
   #menu {
@@ -647,11 +609,14 @@ footer h2 {
   }
 }
 @media screen and (max-width: 991px) {
-  .cont_aside h2, .cont_ultimosarticulos h2 {
+  .cont_ultimosarticulos h2 {
     font-size: 22px;
   }
   .cont_aside aside button {
     padding: 5px 22px;
+  }
+  .cont_aside h2 {
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 950px) {
