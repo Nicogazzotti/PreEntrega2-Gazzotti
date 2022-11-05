@@ -75,12 +75,15 @@
         width:300px;
     }
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 580px) {
     .navbar {
         width: 200px;
     }
     .logo {
-        margin-right: 30px;
+        margin-right: 20px;
+        a{
+            font-size:32px;
+        }
     }
     .menu_desplegable {
         margin-right: 50px;
@@ -90,27 +93,20 @@
     .navbar {
         width: 150px;
     }
-    .logo a {
-        font-size: 28px;
+    .logo{ 
+        margin-right:10px;
+        padding-left: 0;
+        a{
+            font-size: 28px;
+        }
     }
     .menu_desplegable {
-        margin-right: 50px;
+        margin-right:0px;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .logo{
-        padding-left: 0;
-        
-    }
     .navbar{
         width:100px;
-    }
-    .menu_desplegable {
-        margin-right: 0px;
-    }
+    } 
 }
-
-// @media screen and (max-width: 350px) {
-    
-// }
