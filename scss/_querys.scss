@@ -128,6 +128,16 @@
 @media screen and (max-width: 400px) {
     .navbar{
         width:100px;
+    }
+    .menu_desplegable button{
+        width:70px;
+        margin-right:40px;
+    }
+    .logo{
+        margin-right:5px;
+        a{
+            font-size: 23px;
+        }
     } 
     .redes{
         width:250px;
