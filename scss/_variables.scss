@@ -1,0 +1,16 @@
+$cg:#eeeeee ;
+$cb:white;
+$lg:lightgrey;
+$cdsb:deepskyblue;
+$w100: 100%;
+
+@mixin flex($disp , $just , $align){
+    display         : $disp;
+    justify-content : $just;
+    align-items     : $align;       
+
+}
+@mixin font($fs, $fw){
+    font-size  : $fs;
+    font-weight: $fw;
+}

@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+a{
+    &:link{
+        color: black;
+        text-decoration: none;
+    } 
+    &:visited{
+        color: black;
+        text-decoration: none;
+    }
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+// cambio colores etiquetas a
+.logo a{
+    color:$cdsb;
+}
+.cont-dentro_portada a{
+    color:skyblue;
+}
+.texto_index a{
+    color:dodgerblue;
+}

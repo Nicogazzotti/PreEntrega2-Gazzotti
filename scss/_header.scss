@@ -1,7 +1,5 @@
 /* menu header */
-$w100: 100%;
-$cg:#eeeeee ;
-$cb:white;
+
 header{
     position: fixed;
     top: 0;
@@ -39,7 +37,13 @@ header{
         text-decoration:none;
     }
 }
-
+.btn-group{
+    width:300px;
+    button{
+        background-color:$cdsb;
+        border-color:$cdsb;
+    }
+}
 
 .navbar{
     width:600px;
